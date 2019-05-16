@@ -16,6 +16,6 @@ console.time('hello');
     console.log('hi');
     console.log('hi');
     console.log('hi');
-    console.log('hi');
+    console.log('hi'); 
 console.timeEnd('hello');
 
