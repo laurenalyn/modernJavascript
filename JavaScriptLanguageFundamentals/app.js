@@ -1,38 +1,46 @@
-// primitive types
+let val;
 
-//string
-const name = 'John Doe';
-// number
-const age = 30;
-// boolean
-const hasKids = true;
-// null
-const car = null;
-// undefinded
-let test;
-// symbol
-const sym = Symbol();
+// number to string
+// val = 5;
+val = String(555);
+val = String(4+4);
 
-console.log(typeof name);
-console.log(typeof age);
-console.log(typeof hasKids);
-console.log(typeof car);
-console.log(typeof test);
-console.log(typeof sym);
+// boolean to string
+val = String(true);
 
-// referenct types - objects
+// date to string
+val = String(new Date());
 
-// array
-const hobbies = ['movies', 'music'];
-// object literal
-const address = {
-    city: 'boston',
-    state: 'ma'
-}
-// date
-const today = new Date();
+// array to string
+val = String([1,2,3,4]);
 
+// toString();
+val = (5).toString();
+val = (true).toString();
 
-console.log(typeof hobbies);
-console.log(typeof address);
-console.log(typeof today);
+// string to number
+val = '5';
+val = Number('5');
+val = Number(true);
+val = Number(false);
+val = Number(null);
+val = Number('hello');
+val = Number([1,2,3,4]);
+
+// parseInt();
+val = parseInt('100.30');
+// parseFloat();
+val = parseFloat('100.30');
+
+// // output
+// console.log(val);
+// console.log(typeof val);
+// console.log(val.length);
+// console.log(val.toFixed(2));
+
+const val1 = 5;
+const val2 = 6;
+const sum = val1 + val2;
+
+console.log(sum);
+console.log(typeof sum);
